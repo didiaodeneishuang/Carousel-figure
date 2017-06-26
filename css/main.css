@@ -1,0 +1,71 @@
+* {
+    margin:0;
+    padding:0;
+}
+.pictureToggle {
+    position: relative;
+    width:530px ;
+    margin: 50px auto;
+}
+.imgSlide {
+    display: none;
+    width:530px;
+    height: 350px;
+}
+.show {
+    display: inline-block;
+    animation: 2s fade linear;
+}
+@keyframes fade {
+    0% {opacity: 0}
+    50% {opacity: 0.8}
+    100% {opacity: 1.0}
+}
+.buttonToggle {
+    width:45px;
+    height:75px;
+    line-height: 75px;
+    text-align: center;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    font-size:40px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform:translateY(-50%)
+}
+.buttonToggle:hover {
+    background: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.buttonToggle:focus {
+    outline: none;
+}
+.right {
+    left:100%;
+    top: 50%;
+    transform:translateX(-100%) translateY(-50%)
+}
+.dotToggle {
+    list-style: none;
+    background: rgba(255,255,255,0.2);
+    border-radius: 18px;
+    position: absolute;
+    left:50%;
+    top:80%;
+    transform:translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+.dot {
+    float: left;
+    margin: 8px;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background: #fff;
+}
+.red {
+    background: red;
+}

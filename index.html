@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="pictureToggle" data-imgs="6" data-show="0">
+        <img id="img-0" class="imgSlide show" src="img/1.jpg" alt="图片">
+        <img id="img-1" class="imgSlide" src="img/2.jpg" alt="图片">
+        <img id="img-2" class="imgSlide" src="img/3.jpg" alt="图片">
+        <img id="img-3" class="imgSlide" src="img/4.jpg" alt="图片">
+        <img id="img-4" class="imgSlide" src="img/5.jpg" alt="图片">
+        <img id="img-5" class="imgSlide" src="img/6.jpg" alt="图片">
+        <button class="buttonToggle" data-offset="-1">&lt;</button>
+        <button class="buttonToggle right" data-offset="1">&gt;</button>
+        <ul class="dotToggle">
+            <li id="dot-0" data-index="0" class="dot red"></li>
+            <li id="dot-1" data-index="1" class="dot"></li>
+            <li id="dot-2" data-index="2" class="dot"></li>
+            <li id="dot-3" data-index="3" class="dot"></li>
+            <li id="dot-4" data-index="4" class="dot"></li>
+            <li id="dot-5" data-index="5" class="dot"></li>
+        </ul>
+    </div>
+
+    <script src="js/myTemplate.js"></script>
+    <script src="js/master.js"></script>
+</body>
+</html>
